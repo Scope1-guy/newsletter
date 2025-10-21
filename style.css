@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(235, 18%, 26%);
+}
+.the-container{
+    background-color: white;
+    border-radius: 30px;
+    gap: 30px;
+    display: flex;
+}
+.sign-in-container{
+    padding: 30px;
+    display: flex;
+}
+.mobile-image{
+    display: none;
+}
+.right-box{
+    width: 20vw;
+    padding: 20px;
+    margin-top: 50px;
+}
+.right-box-header{
+    font-size: 55px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.right-box-joining{
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+.texts{
+    margin-top: 10px;
+}
+.texts span{
+    font-size: 20px;
+    color: white;
+    background-color: red;
+}
+.sign-form{
+    margin-top: 50px;
+}
+.sign-form-email-error{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sign-form label, .email-input-error{
+    font-weight: 700;
+    font-size: 15px;
+}
+.email-input-error{
+    display: none;
+    margin: 0;
+    color: hsl(4, 100%, 67%);
+}
+.sign-form input{
+    width: 96%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-top: 10px;
+}
+.sign-form button, .dismiss-message{
+    margin-top: 15px;
+    width: 100%;
+    padding: 18px;
+    font-size: 15px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+}
+.sign-form button:hover, .dismiss-message:hover, .sign-form button:active, .dismiss-message:active{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 5px 2px 10px hsl(4, 100%, 67%);
+}
+.terms-conditions{
+    font-size: 10.7px;
+    margin-top: 10px;
+}
+.terms-conditions-btn{
+    text-decoration: underline;
+    font-weight: 700;
+    color: darkblue;
+    cursor: pointer;
+}
+.terms-popup{
+    width: 43%;
+    height: 55%;
+    border-radius: 40px;
+    border: 15px solid white;
+}
+.agree-plus-close-modal{
+    width: 100%;
+}
+.thanks-container{
+    display: none;
+    color: hsl(234, 29%, 20%);
+    padding: 50px;
+}
+
+.thanks-text{
+    font-size: 58px;
+    width: 300px;
+    margin: 0;
+    margin-top: 10px;
+}
+.confirmation-text{
+    width: 350px;
+    font-size: 17px;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+
+/* Tablets (portrait and small laptops) */
+@media (max-width: 1024px) {
+    .the-container {
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
+      gap: 20px;
+      width: 90%;
+    }
+  
+    .right-box {
+      width: 80%;
+      margin-top: 20px;
+    }
+  
+    .right-box-header {
+      font-size: 45px;
+    }
+  
+    .right-box-joining {
+      font-size: 15px;
+    }
+  
+    .thanks-text {
+      font-size: 45px;
+    }
+  
+    .confirmation-text {
+      width: 80%;
+      font-size: 16px;
+    }
+  }
+  
+  /* Phones (landscape & portrait) */
+  @media (max-width: 768px) {
+    body {
+      height: auto;
+      padding: 20px;
+      align-items: flex-start;
+    }
+  
+    .the-container {
+      flex-direction: column;
+      width: 100%;
+      border-radius: 0;
+      gap: 10px;
+    }
+  
+    .mobile-image {
+      display: block;
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  
+    .sign-in-container {
+      padding: 20px;
+    }
+  
+    .right-box {
+      width: 100%;
+      margin-top: 10px;
+      padding: 15px;
+    }
+  
+    .right-box-header {
+      font-size: 35px;
+    }
+  
+    .right-box-joining {
+      font-size: 14px;
+    }
+  
+    .texts span {
+      font-size: 16px;
+    }
+  
+    .sign-form input {
+      width: 100%;
+    }
+  
+    .sign-form button {
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .desktop-design{
+        display: none;
+    }
+
+    .terms-popup{
+        width: auto;
+        height: auto;
+    }
+  
+    .thanks-text {
+      font-size: 38px;
+    }
+  
+    .confirmation-text {
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+  
+  /* Small phones (under 480px) */
+  @media (max-width: 480px) {
+    .right-box-header {
+      font-size: 28px;
+    }
+  
+    .right-box-joining {
+      font-size: 13px;
+    }
+  
+    .texts span {
+      font-size: 14px;
+    }
+  
+    .thanks-text {
+      font-size: 30px;
+    }
+  
+    .confirmation-text {
+      font-size: 14px;
+    }
+  }

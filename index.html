@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="the-container sign-in-container">
+        <img src="assets/images/illustration-sign-up-mobile.svg" class="mobile-image">
+
+        <div class="right-box">
+            <h2 class="right-box-header">Stay Updated!</h2>
+            <p class="right-box-joining">Join 60,000+ product managers receiving monthly updates on:</p>
+
+            <p class="texts"><span>&#9745;</span> Product discovery and building what matters</p>
+            <p class="texts"><span>&#9745;</span> Measuring to ensure updates are a success</p>
+            <p class="texts"><span>&#9745;</span> And much more!</p>
+
+            <form class="sign-form">
+                <div class="sign-form-email-error">
+                    <label>Email address</label>
+                    <p class="email-input-error">Valid email required</p>
+                </div>
+                <input type="email" placeholder="scope@scope.com" class="email-input" required><br>
+
+                <button type="submit" class="email-button">Subscribe to monthly newsletter</button>
+            </form>
+
+            <div class="terms-conditions">By clicking on the subscribe button, you're agreeing to out <span class="terms-conditions-btn">Term and condition</span></div>
+            
+            <dialog class="terms-popup">
+                <div>
+                    <h1>Newsletter Terms & Conditions</h1>
+                    <p><b>Last updated:</b> October 21, 2025</p>
+
+                    <p>Welcome to our newsletter! These Terms & Conditions (“Terms”) explain how we handle your
+                    information and what you agree to when you subscribe.
+                    </p>
+                    <p>Please read them carefully before signing up.</p>
+
+                    <hr>
+
+                    <h5>1. Subscription</h5>
+                    <p>
+                        By subscribing to our newsletter, you agree to receive occasional emails
+                        from us containing news, updates, promotions, product announcements, and other relevant information.
+                        Subscription is free and completely voluntary.
+                    </p>
+
+                    <hr>
+                    
+                    <h5>2. Use of Your Information</h5>
+                    <p>
+                        When you subscribe, we collect your email address (and any optional information you provide).
+                        Your details will only be used to send you the newsletter and related communications —
+                        we will never sell, rent, or share your information with third parties without your consent.
+                    </p>
+
+                    <hr>
+                    
+                    <h5>3. Unsubscribing</h5>
+                    <p>
+                        You can unsubscribe at any time by clicking the “Unsubscribe” link at the bottom of any email we send.
+                        Once unsubscribed, you’ll no longer receive emails from us unless you choose to rejoin later.
+                    </p>
+
+                    <hr>
+                    
+                    <h5>3. Email Content</h5>
+                    <p>Our emails may include:</p>
+                    <ul>
+                        <li>News about our website, products, or services</li>
+                        <li>Tips, guides, or blog updates</li>
+                        <li>Occasional promotional offers</li>
+                    </ul>
+                    <p>We aim to keep our content relevant and non-spammy.</p>
+
+
+                    <hr>
+                    
+                    <h5>5. Frequency</h5>
+                    <p>
+                        We try not to overwhelm your inbox. Typically, we’ll
+                        send newsletters no more than a few times per month, depending on updates or announcements.
+                    </p>
+
+                    <hr>
+                    
+                    <h5>6. Data Protection</h5>
+                    <p>
+                        We take privacy seriously. Your data is stored securely and handled in line with applicable data protection laws.
+                        For more details on how we protect your information, please read our [Privacy Policy].
+                    </p>
+
+
+                    <hr>
+                    
+                    <h5>7. Third-Party Services</h5>
+                    <p>
+                        We may use third-party tools (like Mailchimp, Sendinblue, etc.) to manage email delivery.
+                        These services are GDPR-compliant and only process your data for the purpose of sending newsletters.
+                    </p>
+
+                    <hr>
+                    
+                    <h5>8. Changes to These Terms</h5>
+                    <p>
+                        We may update these Terms occasionally. Any changes will be posted on this page with a new “Last updated” date.
+                        By continuing to subscribe after updates, you agree to the revised Terms.
+                    </p>
+
+                    <button class="agree-plus-close-modal">Agree and Continue</button>
+                </div>
+            </dialog>
+        </div>
+
+        <img src="assets/images/illustration-sign-up-desktop.svg" class="desktop-design">
+    </div>
+
+    <div class="the-container thanks-container">
+        <img src="assets/images/icon-success.svg">
+        <h2 class="thanks-text">Thanks for subscribing!</h2>
+
+        <p class="confirmation-text">A confirmation email has been sent to <b class="email-name"></b>. 
+        Please open it and click the button inside to confirm your subscription.
+        </p>
+
+        <button class="dismiss-message">Dismiss message</button>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
